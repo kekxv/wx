@@ -1,0 +1,49 @@
+{
+  "button": [
+    {
+      "type": "view",
+      "name": "首页",
+      "url": ""
+    },
+    {
+      "name": "随机推荐",
+      "sub_button": [
+        {
+          "type": "click",
+          "name": "📚小说推介",
+          "key": "FictionRecommend"
+        },
+        {
+          "type": "click",
+          "name": "🎦电源推介",
+          "key": "MovieRecommend"
+        },
+        {
+          "type": "click",
+          "name": "🔎搜索提示",
+          "key": "SearchTip"
+        }
+      ]
+    },
+    {
+      "name": "个人中心",
+      "sub_button": [
+        {
+          "type": "scancode_push",
+          "name": "📷登录",
+          "key": "ScanCodeLogin"
+        },
+        {
+          "type": "scancode_waitmsg",
+          "name": "📷登录",
+          "key": "ScanCodeLogin"
+        },
+        {
+          "type": "click",
+          "name": "🎨记录",
+          "key": "Record"
+        }
+      ]
+    }
+  ]
+}

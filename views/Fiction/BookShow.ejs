@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/libs/FontAwesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='/stylesheets/libs/weui.min.css' />
+    <link rel='stylesheet' href='/stylesheets/libs/jquery-weui.css' />
+    <script src="/javascripts/libs/jquery-2.1.4.js"></script>
+    <script src="/javascripts/libs/jquery-weui.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body ontouchstart>
+<div class="page__bd" style="height: 100%;">
+    <div class="weui-tab">
+        <div class="weui-tab__panel">
+            <header class='demos-header'>
+                <h3 class="demos-second-title" style="padding: 0.5em"><%= title %></h3>
+            </header>
+            <div class="weui-panel">
+                <div class="weui-media-box weui-media-box_text">
+                    <p style="text-align: center;">
+                        <a href="<%= LastChapter %>" class="weui-btn weui-btn_mini weui-btn_plain-default">上一章</a>
+                        <a href="./all" class="weui-btn weui-btn_mini weui-btn_plain-default">目录</a>
+                        <a href="<%= NextChapter %>" class="weui-btn weui-btn_mini weui-btn_plain-primary">下一章</a>
+                    </p>
+
+                    <p>
+                        <%- details %>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <a href="<%= LastChapter %>" class="weui-btn weui-btn_mini weui-btn_plain-default">上一章</a>
+                        <a href="./all" class="weui-btn weui-btn_mini weui-btn_plain-default">目录</a>
+                        <a href="<%= NextChapter %>" class="weui-btn weui-btn_mini weui-btn_plain-primary">下一章</a>
+                    </p>
+                    <ul class="weui-media-box__info">
+                        <li class="weui-media-box__info__meta"><a href="<%= SourceUrl %>">阅读原文 <%= Source %></a></li>
+                        <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">时间 <%= new Date().toString("yyyy-mm-dd") %></li>
+                    </ul>
+                </div>
+            </div>
+
+            <%- include("./footer.ejs") %>
+
+        </div>
+        <%- include("./Tabbar.ejs") %>
+    </div>
+</div>
+</body>
+</html>

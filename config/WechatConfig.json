@@ -1,0 +1,23 @@
+{
+  "Name": "",
+  "appID": "",
+  "appScrect": "",
+  "URL": "",
+  "token": "",
+  "EncodingAESKey": "",
+  "apiDomain": "https://api.weixin.qq.com",
+  "apiURL": {
+    "accessTokenApi": "%s/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s",
+    "Menu": {
+      "Create": "%s/cgi-bin/menu/create?access_token=%s",
+      "addConditional": "%s/cgi-bin/menu/addconditional?access_token=%s"
+    },
+    "Tags": {
+      "Create":"%s/cgi-bin/tags/create?access_token=%s",
+      "Get":"%s/cgi-bin/tags/get?access_token=%s"
+      ,"Update":"%s/cgi-bin/tags/update?access_token=%s"
+      ,"Delete":"%s/cgi-bin/tags/delete?access_token=%s"
+      ,"GetIdList":"%s/cgi-bin/tags/getidlist?access_token=%s"
+    }
+  }
+}
